@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/typing-assistant-react/static/css/main.073c9b0a.css",
+    "main.js": "/typing-assistant-react/static/js/main.478f6750.js",
+    "static/js/787.fa077793.chunk.js": "/typing-assistant-react/static/js/787.fa077793.chunk.js",
+    "static/media/logo.svg": "/typing-assistant-react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/typing-assistant-react/index.html",
+    "main.073c9b0a.css.map": "/typing-assistant-react/static/css/main.073c9b0a.css.map",
+    "main.478f6750.js.map": "/typing-assistant-react/static/js/main.478f6750.js.map",
+    "787.fa077793.chunk.js.map": "/typing-assistant-react/static/js/787.fa077793.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.478f6750.js"
+  ]
+}
