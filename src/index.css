@@ -26,10 +26,11 @@
 .NavBar .left-nav{
   
   display: flex;
-  gap: 5px;
+  gap: 15px;
+  align-items: center;
 }
 
-.NavBar .left-nav p{
+.NavBar .left-nav h2{
   font-family: "Black Ops One";
 }
 
@@ -38,6 +39,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  height: 40%;
 }
 .TypingZone .timer-area{
   display: flex;
@@ -46,6 +48,12 @@
 
 .TypingZone .timer-area .timer-list{
   display: flex;
+  gap: 5px;
+}
+
+.TypingZone .type-area {
+  display: flex;
+  flex-wrap: wrap;
   gap: 5px;
 }
 

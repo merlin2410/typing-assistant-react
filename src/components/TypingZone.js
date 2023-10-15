@@ -1,6 +1,19 @@
-import React from "react";
+import React,{useEffect, useState} from "react";
+import { generate } from "random-words";
 
 const TypingZone = () => {
+
+ 
+ const [words,setWords] = useState([]);
+
+ useEffect(()=>{
+    setWords(generate(50));
+ },[]);
+
+ function handleClick(wordLength){
+    setWords(generate(wordLength));
+ }
+
   return (
     <div className="TypingZone">
       <div className="timer-area">
@@ -14,7 +27,14 @@ const TypingZone = () => {
         </div>
       </div>
       <div className="type-area">
-        <p>loeml flkdnfldkn odfknfldknf oldfldkf ldknfldk ldknfl d</p>
+        {
+            words.map((word)=>{
+               
+                return (
+                    <span className="word">{word}</span>
+                )
+            })
+        }
       </div>
       <div className="options-area">
         <center>
@@ -25,10 +45,10 @@ const TypingZone = () => {
             <span> - reset</span>
         </center>
         <center className="num-btns">
-            <button className="btn num">10</button>
-            <button className="btn num">50</button>
-            <button className="btn num">80</button>
-            <button className="btn num">100</button>
+            <button onClick={()=>{handleClick(10)}} className="btn num">10</button>
+            <button onClick={()=>{handleClick(50)}} className="btn num">50</button>
+            <button onClick={()=>{handleClick(80)}} className="btn num">80</button>
+            <button onClick={()=>{handleClick(100)}} className="btn num">100</button>
             <span> - no. of words</span>
         </center>
       </div>
