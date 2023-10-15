@@ -1,13 +1,72 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+  font-family: "Poppins";
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  margin: auto;
+  width: 50%;
+  height: 80vh;
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.NavBar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.NavBar .left-nav{
+  
+  display: flex;
+  gap: 5px;
+}
+
+.NavBar .left-nav p{
+  font-family: "Black Ops One";
+}
+
+
+.TypingZone{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.TypingZone .timer-area{
+  display: flex;
+  justify-content: space-between;
+}
+
+.TypingZone .timer-area .timer-list{
+  display: flex;
+  gap: 5px;
+}
+
+.TypingZone .options-area{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.TypingZone .options-area .btn{
+  color: white;
+  padding: 5px;
+  outline: none;
+  border-radius: 9px;
+  border: none;
+  background-color: black;
+  width: 45px;
+}
+
+.TypingZone .options-area .num-btns{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
