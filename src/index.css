@@ -78,3 +78,16 @@
   gap: 10px;
   justify-content: center;
 }
+
+.Footer{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+ bottom: -263px;
+}
+
+.Footer .left-footer{
+  display: flex;
+  gap: 5px;
+  
+}
